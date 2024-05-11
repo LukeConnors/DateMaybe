@@ -44,12 +44,12 @@ def upgrade():
                     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
                     sa.Column('title', sa.String(length=255), nullable=False),
                     sa.Column('body', sa.String(length=255), nullable=True)
-                    )
+    )
     
     op.create_table('events',
                     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
                     sa.Column('address', sa.String(length=255), nullable=False)
-                    )
+    )
 
     if environment == "production":
         op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
