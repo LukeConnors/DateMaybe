@@ -42,7 +42,8 @@ def upgrade():
     
     op.create_table('post',
                     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
-                    
+                    sa.Column('title', sa.String(length=255), nullable=False),
+                    sa.Column('body', sa.String(length=255), nullable=True)
                     )
 
     if environment == "production":
