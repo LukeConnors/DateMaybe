@@ -38,12 +38,17 @@ def upgrade():
     sa.Column('liked_user_id', sa.Integer, sa.ForeignKey, nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=False),
     sa.Column('updated_at', sa.DateTime(), nullable=False)
-                    )
+    )
     
-    op.create_table('post',
+    op.create_table('posts',
                     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
                     sa.Column('title', sa.String(length=255), nullable=False),
                     sa.Column('body', sa.String(length=255), nullable=True)
+                    )
+    
+    op.create_table('events',
+                    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
+                    sa.Column('address', sa.String(length=255), nullable=False)
                     )
 
     if environment == "production":
