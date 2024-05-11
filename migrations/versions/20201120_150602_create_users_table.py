@@ -39,6 +39,11 @@ def upgrade():
     sa.Column('created_at', sa.DateTime(), nullable=False),
     sa.Column('updated_at', sa.DateTime(), nullable=False)
                     )
+    
+    op.create_table('post',
+                    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
+                    
+                    )
 
     if environment == "production":
         op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
