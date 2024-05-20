@@ -29,13 +29,19 @@ def upgrade():
     sa.Column('hashed_password', sa.String(length=255), nullable=False),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email'),
-    sa.UniqueConstraint('username')
+    sa.UniqueConstraint('username'),
+    sa.PrimaryKeyConstraint('id')
+    )
+
+    op.create_table('profiles',
+    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
+    sa.Column('description', sa.Text, nullable=False),
     )
 
     op.create_table('likes',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
     sa.Column('user_id', sa.Integer, sa.ForeignKey('users.id'), nullable=False),
-    sa.Column('liked_user_id', sa.Integer, sa.ForeignKey, nullable=False),
+    sa.Column('liked_user_id', sa.Integer, sa.ForeignKey('users.id'), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=False),
     sa.Column('updated_at', sa.DateTime(), nullable=False)
     )
