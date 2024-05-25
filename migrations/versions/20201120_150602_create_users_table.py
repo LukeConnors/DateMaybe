@@ -36,6 +36,7 @@ def upgrade():
     op.create_table('profiles',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
     sa.Column('description', sa.Text, nullable=False),
+    sa.Column('user_id', sa.Integer(), sa.ForeignKey('users.id'), nullable=False)
     )
 
     op.create_table('likes',
