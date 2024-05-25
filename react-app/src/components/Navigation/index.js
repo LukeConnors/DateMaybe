@@ -9,10 +9,10 @@ function Navigation({ isLoaded }){
 
 	return (
 		<div className='nav-container'>
-				<NavLink exact to="/" className="home">Home</NavLink>
 			{isLoaded && (
 					<ProfileButton user={sessionUser} />
 			)}
+				<NavLink exact to="/" className="home">Home</NavLink>
 		</div>
 	);
 }
