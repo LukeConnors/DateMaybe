@@ -63,7 +63,7 @@ def upgrade():
 
     op.create_table('tags',
     sa.Column('id', sa.Integer, autoincrement=True, nullable=False),
-                    
+    sa.Column('name', sa.String(length=255), nullable=False)    
     )
 
     if environment == "production":
