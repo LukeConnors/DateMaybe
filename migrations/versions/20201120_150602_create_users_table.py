@@ -52,8 +52,8 @@ def upgrade():
     op.create_table('posts',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
     sa.Column('title', sa.String(length=255), nullable=False),
-    sa.Column('body', sa.String(length=255), nullable=True)
-    sa.PrimaryKeyConstraint('id'),
+    sa.Column('body', sa.String(length=255), nullable=True),
+    sa.PrimaryKeyConstraint('id')
     )
     
     op.create_table('events',
@@ -64,7 +64,7 @@ def upgrade():
     op.create_table('tags',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
     sa.Column('name', sa.String(length=255), nullable=False)
-    sa.Column('post_id', sa.Integer(), nullable=False)  
+    sa.Column('post_id', sa.Integer(), nullable=False sa.ForeignKey('posts.id'))  
     )
 
     if environment == "production":
