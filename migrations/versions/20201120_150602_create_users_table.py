@@ -61,6 +61,11 @@ def upgrade():
     sa.Column('address', sa.String(length=255), nullable=False)
     )
 
+    op.create_table('tags',
+    sa.Column('id', sa.Integer, autoincrement=True, nullable=False),
+                    
+    )
+
     if environment == "production":
         op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
     # ### end Alembic commands ###qqqqqqqqq
