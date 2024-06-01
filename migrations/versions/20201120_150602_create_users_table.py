@@ -43,8 +43,8 @@ def upgrade():
 
     op.create_table('likes',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
-    sa.Column('user_id', sa.Integer, sa.ForeignKey('users.id'), nullable=False),
-    sa.Column('liked_user_id', sa.Integer, sa.ForeignKey('users.id'), nullable=False),
+    sa.Column('user_id', sa.Integer(), sa.ForeignKey('users.id'), nullable=False),
+    sa.Column('liked_user_id', sa.Integer(), sa.ForeignKey('users.id'), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=False),
     sa.Column('updated_at', sa.DateTime(), nullable=False)
     )
@@ -62,8 +62,9 @@ def upgrade():
     )
 
     op.create_table('tags',
-    sa.Column('id', sa.Integer, autoincrement=True, nullable=False),
-    sa.Column('name', sa.String(length=255), nullable=False)    
+    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
+    sa.Column('name', sa.String(length=255), nullable=False)
+    sa.Column('post_id', sa.Integer(), nullable=False)  
     )
 
     if environment == "production":
