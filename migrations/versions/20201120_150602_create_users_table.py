@@ -63,8 +63,8 @@ def upgrade():
 
     op.create_table('tags',
     sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
-    sa.Column('name', sa.String(length=255), nullable=False)
-    sa.Column('post_id', sa.Integer(), nullable=False sa.ForeignKey('posts.id'))  
+    sa.Column('name', sa.String(length=255), nullable=False),
+    sa.Column('post_id', sa.Integer(), sa.ForeignKey('posts.id'), nullable=False),  
     )
 
     if environment == "production":
