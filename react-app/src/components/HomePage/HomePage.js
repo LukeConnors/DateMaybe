@@ -8,6 +8,8 @@ function HomePage(){
         <>
         <div className="home-page-container">
             <h1>Welcome to Date Maybe</h1>
+            <h3>What is Date Maybe?</h3>
+            <p></p>
         </div>
         </>
     )
