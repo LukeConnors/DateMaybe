@@ -31,7 +31,7 @@ function LoginFormPage() {
           ))}
         </ul>
         <label>
-          Email
+          Email Address
           <input
             type="text"
             value={email}
