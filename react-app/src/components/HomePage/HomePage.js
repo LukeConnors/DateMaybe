@@ -17,9 +17,10 @@ function HomePage() {
             a tailor made first date!
           </p>
         </div>
-        <div>
+        <div className="home-list-container">
           <ul>
-            <li></li>
+            <h3>Steps to begin your dating journey!</h3>
+            <li>Sign up as a user for the website</li>
             <li></li>
             <li></li>
           </ul>
