@@ -18,12 +18,17 @@ function HomePage() {
           </p>
         </div>
         <div className="home-list-container">
-          <ul>
-            <h3>Steps to begin your dating journey!</h3>
-            <li>Sign up as a user for the website</li>
-            <li>Fill out your profile and list your interests</li>
-            <li>Subscribe to the premium version if you want to actually go on dates!</li>
-          </ul>
+          <h3>Steps to begin your dating journey!</h3>
+          <div className="home-list">
+            <ul>
+              <li>Sign up as a user for the website</li>
+              <li>Fill out your profile and list your interests</li>
+              <li>
+                Subscribe to the premium version if you want to actually go on
+                dates!
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

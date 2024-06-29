@@ -7,3 +7,10 @@
     height: 90%;
     width: 90%;
 }
+
+.home-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
