@@ -21,8 +21,8 @@ function HomePage() {
           <ul>
             <h3>Steps to begin your dating journey!</h3>
             <li>Sign up as a user for the website</li>
-            <li></li>
-            <li></li>
+            <li>Fill out your profile and list your interests</li>
+            <li>Subscribe to the premium version if you want to actually go on dates!</li>
           </ul>
         </div>
       </div>
