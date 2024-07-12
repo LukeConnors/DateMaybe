@@ -22,7 +22,7 @@ function HomePage() {
           <div className="home-list">
             <ul>
               <li>Sign up as a user for the website</li>
-              <li>Fill out your profile and list your interests</li>
+              <li>Fill out your profileee and list your interests</li>
               <li>
                 Subscribe to the premium version if you want to actually go on
                 dates.
