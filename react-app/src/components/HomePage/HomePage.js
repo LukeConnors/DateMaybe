@@ -18,7 +18,7 @@ function HomePage() {
           </p>
         </div>
         <div className="home-list-container">
-          <h3>Steps to begin your dating journey!</h3>
+          <h3>Steps to begin your dating journey:</h3>
           <div className="home-list">
             <ul>
               <li>Sign up as a user for the website</li>
