@@ -40,7 +40,7 @@ function LoginFormModal() {
           />
         </label>
         <label>
-          Password
+          Password:
           <input
             type="password"
             value={password}
