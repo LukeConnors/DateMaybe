@@ -31,7 +31,7 @@ function LoginFormModal() {
           ))}
         </ul>
         <label>
-          Email Address
+          Email Address:
           <input
             type="text"
             value={email}
