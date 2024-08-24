@@ -25,7 +25,7 @@ function HomePage() {
               <li>Fill out your profile and list your interests</li>
               <li>
                 Subscribe to the premium version if you want to actually go on
-                dates.
+                dates!
               </li>
             </ul>
           </div>
