@@ -13,7 +13,7 @@ function HomePage() {
             incentive payments. On the premium plan of Date Maybe user's have
             the opportunity to be matched together and sent on a date that is
             entirely paid for by their subscription payments! Date Maybe's
-            matchmakers will find who is most compatible for you and send you on
+            matchmakers will find who is most compatible for you, and send you on
             a tailor-made first date.
           </p>
         </div>
