@@ -7,7 +7,7 @@ function HomePage() {
       <div className="home-page-container">
         <div>
           <h1>Welcome to Date Maybe</h1>
-          <h3>What is Date Maybe?</h3>
+          <h3>What is Date Maybe?!</h3>
           <p>
             Date Maybe is a dating app that has the unique feature of accepting
             incentive payments. On the premium plan of Date Maybe user's have
